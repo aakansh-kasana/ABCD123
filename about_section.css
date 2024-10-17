@@ -1,0 +1,224 @@
+
+.about_us_img {
+    width: 100% !important;
+}
+
+.glide * {
+    box-sizing: inherit;
+}
+
+.glide__slides {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+
+.glide__slide {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.glide * {
+    box-sizing: inherit;
+}
+
+
+.glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+
+.glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.about_section {
+    position: relative;
+}
+
+@media (max-width:992px) {
+    .about_section.darkImageOverlay picture:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .35);
+    }
+}
+
+@media (min-width:1300px) {
+    .about_section .about_section__container {
+        margin: 50px 30px 30px;
+        padding: 30px 20px 20px;
+    }
+}
+
+@media (min-width:993px) {
+    .about_section:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #11206f;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .about_section:hover:before {
+        opacity: .75;
+        transition: opacity .25s;
+    }
+
+    .about_section:hover .about_section__container {
+        background: none;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .about_section:hover .about_section__container:after {
+        display: none;
+    }
+
+    .about_section:hover .about_section__description {
+        display: block;
+    }
+
+
+    .about_section:hover .about_section__eyebrow--type,
+    .about_section:hover .about_section__title {
+        color: #fff;
+    }
+}
+
+.about_section__bgimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.about_section__bgimg img {
+    height: 100%;
+}
+
+.about_section__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px 20px;
+}
+
+@media (min-width:993px) {
+    .about_section__container {
+        background: #fff;
+        margin: 30px 15px 20px;
+        padding: 20px 15px 15px;
+    }
+
+    .about_section__container:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 7px;
+        width: 100%;
+        background: #1e40af;
+    }
+}
+
+.about_section__eyebrow--type {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media (min-width:992px) {
+    .about_section__eyebrow--type {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.about_section__eyebrow--type {
+    color: #b7b7b7;
+}
+
+@media (max-width:992px) {
+    .about_section__eyebrow--type {
+        color: #fff;
+    }
+}
+
+.about_section__title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+@media (min-width:993px) {
+    .about_section__title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #111;
+    }
+}
+
+.about_section__description {
+    display: none;
+    color: black;
+    background: white;
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+@media (max-width: 700px) {
+    .about_section__description {
+        display: block;
+    }
+}
